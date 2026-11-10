@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기획서 — Deep drawing press 불량 최소화</title>
+<meta name="robots" content="index,follow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.plan-figs figure{margin:0 0 22px;} .plan-figs img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff;}
+.plan-figs figcaption{font-size:13px;color:var(--sub);text-align:center;margin-top:6px;}
+.plan td{white-space:normal;} .plan td .btn{min-height:36px;white-space:nowrap;}
+h3{font-size:15px;margin:16px 0 6px;} main ul{margin:0 0 10px 20px;}
+:root{--ink:#152232;--sub:#5b6b7b;--line:#d8e0e8;--brand:#154b6e;--bg:#f5f7fa;--container-pad:20px}
+@media (min-width:640px){:root{--container-pad:28px}} @media (min-width:1024px){:root{--container-pad:40px}}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--brand)} .wrap,.topnav-inner{max-width:calc(1100px + 2*var(--container-pad));margin:0 auto;padding:0 var(--container-pad)}
+.topnav{background:#0d3350;color:#fff;position:sticky;top:0;z-index:5} .topnav-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;min-height:56px}
+.topnav-brand{color:#fff;text-decoration:none;font-weight:700} .topnav-brand small{font-weight:400;opacity:.75;margin-left:6px}
+.topnav-links{list-style:none;display:flex;gap:4px;margin:0;padding:0} .topnav-links a{color:#dbe7f0;text-decoration:none;padding:8px 12px;border-radius:8px;display:block} .topnav-links a.active,.topnav-links a:hover{background:rgba(255,255,255,.14);color:#fff}
+.hero{background:linear-gradient(180deg,#154b6e,#0d3350);color:#fff;padding:40px 0 36px} .hero h1{margin:6px 0 10px;font-size:clamp(24px,3.4vw,34px);color:#fff} .hero p{margin:0;opacity:.9;max-width:860px} .eyebrow{font-size:13px;opacity:.8}
+main{padding:28px 0 40px} .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin:0 0 20px} .sub{color:var(--sub)}
+.tablewrap{overflow-x:auto} table{border-collapse:collapse;width:100%;font-size:14.5px} th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top} th{background:#eef3f7;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:6px 14px;border-radius:8px;border:1px solid var(--brand);text-decoration:none;font-weight:600} .btn.primary{background:var(--brand);color:#fff}
+footer{border-top:1px solid var(--line);padding:20px 0 28px;color:var(--sub);font-size:13.5px}
+</style>
+</head>
+<body>
+<nav class="topnav" aria-label="주요 메뉴">
+  <div class="topnav-inner">
+    <a class="topnav-brand" href="index.html">Deep drawing press 불량 최소화 <small>data10-11 · 기획 이성헌</small></a>
+    <ul class="topnav-links">
+      <li><a href="index.html">도구</a></li>
+      <li><a href="plan.html" class="active" aria-current="page">기획서</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">현장 데이터 디지털화 전문가과정 · 2차수 · 프로젝트 11 · 기획서 v2.0</div>
+  <h1>Deep drawing press 불량 최소화 기획서</h1>
+  <p>Deep drawing press 작업일보 엑셀을 여러 달 쌓아 일별 · 월별 · 금형 · 소재별 작업량 대비 불량률과 4M · 계절별 「불량이 몰린 조건」, 금형 보수 · 설비 수선 전후, 압력 작업표준 대비를 보여 주는 브라우저 도구입니다.</p>
+</div></header>
+<main><div class="wrap">
+<div class="card">
+  <h2 style="margin-top:0">기획서 내려받기</h2>
+  <p class="sub">파이프라인 · 아키텍처 · 와이어프레임 · 개발일지가 들어간 워드 문서입니다. 버전마다 따로 남깁니다.</p>
+  <div class="tablewrap plan"><table><thead><tr><th>버전</th><th>날짜</th><th>바뀐 점</th><th>파일</th></tr></thead><tbody><tr><td><b>v2.0</b></td><td>2026-11-10</td><td>최종 기획서 — 파이프라인 · 아키텍처 · 와이어프레임 정리 / 로그인 · 사용 신청 · 관리자 승인(요청자 Supabase 로 옮길 수 있게) / 로그인 전 대문</td><td><a class="btn primary" href="docs/기획서/data10-11_이성헌_Deepdrawingpress불량최소화_기획서_v2.0.docx" download>워드 내려받기</a></td></tr></tbody></table></div>
+</div>
+<div class="card plan">
+  <h2 style="margin-top:0">요구사항과 구현</h2>
+  <div class="tablewrap"><table><thead><tr><th>기획서 요구</th><th>구현</th></tr></thead><tbody><tr><td>① 작업 일별/월별 작업량 대비 불량률 분석표</td><td>작업량 가중 불량률(불량 합 ÷ 작업 합), 목표 2% · 지금 5% 선, 목표까지 줄일 불량 수, 엑셀</td></tr><tr><td>② 금형/소재별 작업량 대비 불량률 분석표</td><td>금형 · 소재 메이커 · 소재 lot · 소재규격 · 작업모델 · 작업자별 표, 표본 적음 표시, 금형 × 메이커 교차표</td></tr><tr><td>계절별 4M 근거로 Crack 원인을 추측할 데이터</td><td>「불량이 몰린 조건」 — 한 조건 · 두 조건 조합을 표본 · 배수 · 95% 하한으로 거르고 겹침 표시. AI 는 그 사실만으로 「추정」 정리</td></tr><tr><td>소재 문제 / 프레스 압력 문제</td><td>Main · 쿠션 압력 구간과 정상 범위 아래 · 안 · 위, 계절 × 소재 메이커 교차표, 소재 lot 분석</td></tr><tr><td>금형 보수 시점 예측(사전 보수)</td><td>일부 — 보수 전후 비교와 「보수 후 누적 작업량 이 구간부터 불량률 상승」 참고값. 예측은 이력이 쌓인 뒤 2단계</td></tr><tr><td>소재 메이커 · 소재규격 결과가 바뀐 것 같음(3차)</td><td>두 줄 · 한 줄 머리의 애매한 「소재」 칸 결함 수정, 소재 칸 확인 카드 · 두 칸 바꾸기 · 열 연결 기억, 옛 판 자료 알림</td></tr><tr><td>소재 lot · 모델별 압력 작업표준 · 설비 수선 이력(3차)</td><td>샘플에 소재 lot 칸, 압력 작업표준 표와 ⑥ 기준 대비 실제, 설비(Press) 수선 이력과 수선 전후</td></tr><tr><td>압력 저하 → 설비보전 · 공무팀 전파(3차)</td><td>기준 − 허용보다 낮은 작업 목록 · 복사용 글 · 엑셀. 자동 발송은 하지 않음</td></tr><tr><td>팀 공유</td><td>2단계 — 지금은 브라우저 저장 + JSON 백업</td></tr></tbody></table></div>
+</div>
+<div class="card plan-figs"><h2 style="margin-top:0">그림으로 보기</h2><figure><img src="docs/img/pipeline.png" alt="처리 흐름(파이프라인)" loading="lazy"><figcaption>처리 흐름(파이프라인)</figcaption></figure><figure><img src="docs/img/architecture.png" alt="구성(아키텍처)" loading="lazy"><figcaption>구성(아키텍처)</figcaption></figure><figure><img src="docs/img/wireframe-1.png" alt="와이어프레임 — 로그인 전 대문" loading="lazy"><figcaption>와이어프레임 — 로그인 전 대문</figcaption></figure><figure><img src="docs/img/wireframe-2.png" alt="와이어프레임 — ③ 4M · 계절 분석" loading="lazy"><figcaption>와이어프레임 — ③ 4M · 계절 분석</figcaption></figure><figure><img src="docs/img/wireframe-3.png" alt="와이어프레임 — ⑥ 압력 기준 · 설비" loading="lazy"><figcaption>와이어프레임 — ⑥ 압력 기준 · 설비</figcaption></figure><figure><img src="docs/img/screen.png" alt="실제 화면(예제 데이터)" loading="lazy"><figcaption>실제 화면(예제 데이터)</figcaption></figure></div>
+<div class="card"><h2 style="margin-top:0">개발일지</h2><h3>2026-11-10 · 최종 기획서 · 로그인</h3><ul><li>로그인 · 사용 신청 · 관리자 승인 적용, 로그인 전 대문</li><li>최종 기획서 v2.0(파이프라인 · 아키텍처 · 와이어프레임), README 정리</li><li>로직 테스트 59개 통과</li></ul><h3>2026-10-27 · 3차 반영 · 불일치 점검 · 머리 이름 점검</h3><ul><li>메이커 · 규격이 바뀌어 보인 원인 — 두 줄 머리에서 윗줄 「소재」가 규격으로 읽히던 결함 수정, 규격 표 = 금형 표일 때 알림</li><li>소재 lot 칸, 모델별 압력 작업표준(⑥ 화면), 설비 수선 이력, 압력 저하 전파 목록</li><li>수강생 PC 에서만 어긋남 — 216가지 상태 대조 정상, 옛 판 자료 알림 · 판 맞추기로 원인 후보를 막음</li><li>한 줄 머리 「소재 | 규격」에서도 같은 증상 — 분명한/애매한 이름 두 단계 + 값 모양 판정, 소재 칸 확인 카드</li></ul><h3>2026-10-26 · 비공개 전환</h3><ul><li>리포를 비공개로 바꾸고 README 의 Fork·ZIP 안내를 문의 안내로 교체</li></ul><h3>2026-10-20 · 기획서 v0.1 + 1단계</h3><ul><li>패들릿 제출 글을 기획서로 정리, 화면 7개 구현, 가상 작업일보 12개월</li><li>작업량 가중 불량률, 「불량이 몰린 조건」 세 겹 거름망과 겹침 표시, 보수 시점은 참고값</li><li>검사 35개, 일부러 깨뜨려 8가지 확인, 브라우저 1280 · 390px</li></ul></div>
+</div></main>
+<footer><div class="wrap">현장 데이터 디지털화 전문가과정 · 2차수 · 프로젝트 11 · 기획 이성헌 · <a href="https://data10-00.jobability.co.kr/">2차수 프로젝트 모음</a></div></footer>
+</body>
+</html>
