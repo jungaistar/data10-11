@@ -203,13 +203,18 @@ window.AUTH_CONFIG = {
       },
       "slides": [
         {
-          "image": "images/slide-1.jpg"
+          "image": "images/slide-1.jpg",
+          "tone": "light",
+          "caption": "건화 본사"
         },
         {
-          "image": "images/slide-2.jpg"
+          "image": "images/slide-2.jpg",
+          "tone": "light"
         },
         {
-          "image": "images/slide-3.jpg"
+          "image": "images/slide-3.jpg",
+          "tone": "light",
+          "caption": "용접 현장"
         }
       ],
       "heroMode": "slide"
