@@ -8,6 +8,7 @@ window.AUTH_CONFIG = {
   "kakao": true,
   "idleMinutes": 30,
   "localBypass": true,
+  "board": true,
   "site": {
     "title": "Deep drawing press 불량 최소화",
     "summary": "Deep drawing press 작업일보 엑셀을 여러 달 쌓아 일별 · 월별 · 금형 · 소재별 작업량 대비 불량률과 4M · 계절별 「불량이 몰린 조건」, 금형 보수 · 설비 수선 전후, 압력 작업표준 대비를 보여 주는 브라우저 도구입니다.",
