@@ -6,7 +6,7 @@
   var L = window.DDLogic, S = window.DDStore, C = window.DDCharts, AIP = window.AIPanel;
   /* 판 맞추기 — 브라우저가 옛 logic.js 와 새 app.js 를 섞어 쓰면(Pages 캐시) 버튼과 결과가 어긋날 수 있어, 섞였으면 계산하지 않고 새로고침을 안내합니다.
      판은 scripts/bump-version.mjs 로 index.html(?v=) · logic.js · sample-data.js 와 함께 올립니다. */
-  var APP_VERSION = '2026-11-11.2';
+  var APP_VERSION = '2026-11-11.4';
   var mixed = [['js/logic.js', L], ['js/sample-data.js', window.DDSample]].filter(function (x) { return !x[1] || x[1].VERSION !== APP_VERSION; });
   if (mixed.length || !S || !C || !AIP) {
     var m0 = document.getElementById('main');

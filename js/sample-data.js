@@ -134,5 +134,5 @@
     return { rows: rows, maint: MAINT.slice(), stds: JSON.parse(JSON.stringify(STDS)), repairs: REPAIRS.slice(), files: files };
   }
 
-  return { VERSION: '2026-11-11.2', build: build, MAINT: MAINT, STDS: STDS, REPAIRS: REPAIRS, CUSHION_DROP: CUSHION_DROP, MAIN_DROP: MAIN_DROP, BAD_LOT: BAD_LOT, HEAD_A: HEAD_A, HEAD_B: HEAD_B, START: START, END: END };
+  return { VERSION: '2026-11-11.4', build: build, MAINT: MAINT, STDS: STDS, REPAIRS: REPAIRS, CUSHION_DROP: CUSHION_DROP, MAIN_DROP: MAIN_DROP, BAD_LOT: BAD_LOT, HEAD_A: HEAD_A, HEAD_B: HEAD_B, START: START, END: END };
 });
