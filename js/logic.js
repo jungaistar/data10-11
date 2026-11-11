@@ -15,7 +15,7 @@
   var SCHEMA_VERSION = 1;
   /* 판(版) — index.html 의 ?v= · app.js 의 APP_VERSION · sample-data.js 와 같아야 합니다(scripts/bump-version.mjs 로 함께 올림).
      브라우저가 옛 파일과 새 파일을 섞어 쓰면(GitHub Pages 캐시 10분) 버튼과 결과가 어긋날 수 있어, app.js 가 시작할 때 맞춰 봅니다. */
-  var VERSION = '2026-11-11.6';
+  var VERSION = '2026-11-11.7';
   /* 열 읽기 판 — 가져온 파일마다 db.files[].parser 에 적습니다. 2 = 3차(두 줄 머리 「소재 ― 메이커·규격」 수정 · 소재 lot).
      이보다 낮거나 없는 파일로 쌓인 작업 행은 메이커·규격이 뒤바뀌어 있을 수 있어 다시 가져오라고 알립니다(기록에는 원본 칸이 없어 다시 읽을 수 없음). */
   var PARSER_VERSION = 3;
